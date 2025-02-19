@@ -11,12 +11,20 @@ public class Cliente implements Serializable {
         this.cpf = cpf;
     }
 
-    // Getters e setters
+  
     public String getNome() {
         return nome;
     }
 
     public String getCpf() {
         return cpf;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
 }

@@ -11,12 +11,20 @@ public abstract class Aparelho implements Serializable {
         this.precoLocacao = precoLocacao;
     }
 
-    // Getters e setters
+
+
     public String getNome() {
         return nome;
     }
 
     public double getPrecoLocacao() {
         return precoLocacao;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setPrecoLocacao(double precoLocacao) {
+        this.precoLocacao = precoLocacao;
     }
 }

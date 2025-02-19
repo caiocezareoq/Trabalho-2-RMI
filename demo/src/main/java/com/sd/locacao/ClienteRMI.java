@@ -8,14 +8,14 @@ public class ClienteRMI {
     public static void main(String[] args) {
         try {
 
-            Registry registry = LocateRegistry.getRegistry("localhost", 1084);
+            Registry registry = LocateRegistry.getRegistry("localhost", 1082);
 
             Locacao locacao = (Locacao) registry.lookup("LocacaoService");
             Cliente cliente = new Cliente("Carlos Silva", "12345678900");
             locacao.cadastrarCliente(cliente);
             System.out.println("Cliente cadastrado com sucesso!");
 
-            Aparelho gerador = new subclasses("Gerador 5000W", 150.0);
+            Aparelho gerador = new Gerador("Gerador 5000W", 150.0);
             Aparelho palco = new Palco("Palco Grande", 500.0);
             Aparelho mesas = new Mesas("Mesas", 300.00);
             Aparelho talheres = new Talheres("Talheres", 100.00);

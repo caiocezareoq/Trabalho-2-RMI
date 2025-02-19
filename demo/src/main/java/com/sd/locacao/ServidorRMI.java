@@ -10,7 +10,7 @@ public class ServidorRMI {
            LocacaoImpl locacaoService = new LocacaoImpl();
 
 
-           Registry registry = LocateRegistry.createRegistry(1084);
+           Registry registry = LocateRegistry.createRegistry(1082);
 
            registry.rebind("LocacaoService", locacaoService);
 
